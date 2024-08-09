@@ -215,7 +215,7 @@ class AbstractRepository(Generic[T]):
         sort: Optional[Sort] = None,
         projection: Optional[Dict[str, int]] = None,
     ) -> Iterable[T]:
-        """ "
+        """
         Find entities by mongo query
         """
         return self.find_by_with_output_type(
